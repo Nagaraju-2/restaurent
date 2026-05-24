@@ -1,0 +1,96 @@
+*{
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    margin: 0;
+
+
+}
+
+hr{
+    color: orange;
+    border-color: orange;
+    width:300px;
+    text-align: center;
+    margin:20px auto;
+}
+
+.para{
+    font-size: 20px;
+    text-align: justify;
+    padding: 25px;
+    padding-left: 150px;
+    line-height: 28px;
+}
+
+.about-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    background-color:#363231;
+    padding-left: 30px;
+    flex-wrap: wrap;
+    gap: 65px;
+    padding: 25px;
+    color: white;
+}
+
+.deliver{
+    padding-right: 50px;
+
+}
+
+.main-cont{
+    background-color: #363231;
+    
+}
+p{
+    text-align: justify;
+}
+
+.chef{
+    text-align: center;
+
+}
+
+@media(max-width:536px){
+    .para{
+        justify-content: center;
+    }
+}
+
+
+
+@media (max-width:536px){
+    .chef{
+        display: none;
+    }
+
+}
+
+@media(max-width:556px){
+    .deliver{
+        width:100px;
+
+    }
+}
+
+
+.lii{
+    font-size: 35px;
+    padding: 25px;
+    display: none;
+   
+    
+}
+
+@media(max-width:650px){
+    .navitem{
+        display:none;
+    }
+    
+}
+
+@media(max-width:650px){
+    .lii{
+        display: block;
+    }
+}

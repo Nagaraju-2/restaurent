@@ -1,0 +1,449 @@
+*{
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+header,main,footer{
+    background-color: #363231;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+hr{
+    background-color: #363231;
+    color: orange;
+    border-color: orange;
+    width:400px;
+    text-align: center;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.nav{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+header{
+    position: sticky;
+    top:0px;
+    z-index: 1000;
+}
+
+.navitem{
+    display: flex;
+    gap:20px;
+    font-size:1.2rem;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.main{
+    background-image: url("anni.jpeg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-color: #363231;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:10px;
+}
+
+.h{
+    font-size:4rem;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.e{
+    background-color: transparent;
+    border:2px solid white;
+    color:white;
+    padding:15px;
+    border-radius: 10px;
+    width: 18%;
+    transition: 0.4s ease;
+}
+
+.e:hover{
+    background-color: white;
+    color: black;
+}
+
+.bo{
+    background-color:red;
+    border:2px solid white;
+    color:white;
+    padding:15px;
+    border-style: none;
+    border-radius: 10px;
+    width: 18%;
+    transition: 0.4s ease;
+}
+
+.bo:hover{
+    background-color: orange;
+    transform: scale(1.05);
+}
+
+.time{
+    color:orange;
+}
+
+/* =========================
+   SECTION TITLE
+========================= */
+
+.l{
+    text-align: center;
+    color: white;
+    background-color: #363231;
+}
+
+/* =========================
+   FOOD CARD SECTION
+========================= */
+
+.all{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding:25px;
+    gap: 25px;
+}
+
+.sec{
+    background-color: #363231;
+}
+
+/* =========================
+   PROFESSIONAL FOOD CARDS
+========================= */
+
+.pasta{
+    margin:20px;
+    padding:30px;
+    border-radius: 25px;
+    background-color:#2d2928;
+    color: white;
+    text-align: center;
+
+    border-left: 2px solid orange;
+    border-right: 2px solid orange;
+
+    font-size: 20px;
+
+    box-shadow:
+    0 4px 12px rgba(0,0,0,0.15),
+    0 10px 30px rgba(0,0,0,0.12);
+
+    transition: all 0.4s ease;
+
+    overflow: hidden;
+}
+
+/* CARD HOVER */
+.pasta:hover{
+    transform: translateY(-10px) scale(1.03);
+
+    box-shadow:
+    0 12px 24px rgba(0,0,0,0.25),
+    0 18px 40px rgba(255,165,0,0.2);
+}
+
+/* IMAGE */
+.follo{
+    border-radius: 25px;
+    transition: transform 0.5s ease;
+}
+
+/* IMAGE ZOOM */
+.pasta:hover .follo{
+    transform: scale(1.08);
+}
+
+/* =========================
+   COMMON BUTTON
+========================= */
+
+.b{
+    background-color:red;
+    color:white;
+    border:none;
+
+    padding: 12px;
+
+    border-radius: 10px;
+    width: 100%;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    transition: all 0.4s ease;
+}
+
+.b:hover{
+    background: linear-gradient(45deg,#ff7b00,#ffb700);
+    color: black;
+    transform: scale(1.05);
+}
+
+/* =========================
+   DESSERT CARDS
+========================= */
+
+.cho{
+    margin:20px;
+    padding: 35px;
+    border-radius: 25px;
+    background-color:#2d2928;
+    color: white;
+    text-align: center;
+
+    border-left: 2px solid orange;
+    border-right: 2px solid orange;
+
+    font-size: 15px;
+
+    box-shadow:
+    0 4px 12px rgba(0,0,0,0.15),
+    0 10px 30px rgba(0,0,0,0.12);
+
+    transition: all 0.4s ease;
+}
+
+/* DESSERT CARD HOVER */
+.cho:hover{
+    transform: translateY(-10px) scale(1.03);
+
+    box-shadow:
+    0 12px 24px rgba(0,0,0,0.25),
+    0 18px 40px rgba(255,165,0,0.2);
+}
+
+/* DESSERT IMAGE */
+.imi{
+    border-radius: 50%;
+    transition: transform 0.5s ease;
+}
+
+/* DESSERT IMAGE HOVER */
+.cho:hover .imi{
+    transform: scale(1.08) rotate(5deg);
+}
+
+.chocolava{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
+.secsssss{
+    background-color: #363231;
+}
+
+/* =========================
+   WHY CHOOSE US
+========================= */
+
+.text{
+    text-align: center;
+    color: white;
+    background-color: #363231;
+}
+
+.bai{
+    border-radius: 25px;
+    padding: 30px;
+    background-color:#2d2928;
+
+    transition: all 0.4s ease;
+
+    box-shadow:
+    0 4px 10px rgba(0,0,0,0.12);
+}
+
+/* WHY CARD HOVER */
+.bai:hover{
+    transform: translateY(-8px);
+
+    box-shadow:
+    0 12px 24px rgba(0,0,0,0.25),
+    0 18px 35px rgba(255,165,0,0.18);
+}
+
+.int{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    text-align: center;
+    gap:30px;
+    padding: 25px;
+    background-color: #363231;
+}
+
+.yel{
+    color: orange;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.quick{
+    display: flex;
+    flex-direction: column;
+}
+
+.src{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 25px;
+    justify-content: space-between;
+    gap:20px;
+    background-color:rgb(16, 14, 14);
+}
+
+.luv{
+    background-color: #363231;
+}
+
+/* =========================
+   TYPING EFFECT
+========================= */
+
+.type{
+    width:0;
+    color:white;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid white;
+    display: inline-block;
+    animation: typing 8s steps(40) infinite,blink 0.3s infinite;
+}
+
+@keyframes typing{
+    0%{
+        width:0;
+    }
+    100%{
+        width:450px;
+    }
+}
+
+@keyframes blink{
+    50%{
+        border-color: transparent;
+    }
+}
+
+/* =========================
+   WHATSAPP BUTTON
+========================= */
+
+.bi-whatsapp{
+    position:fixed;
+    bottom: 4%;
+    right: 60px;
+
+    background-color:green;
+    color: white;
+
+    padding: 15px;
+    border-radius:80px;
+
+    font-size: 25px;
+
+    transition: all 0.3s ease;
+
+    z-index: 1000;
+}
+
+.bi-whatsapp:hover{
+    padding: 20px;
+    border:3px solid white;
+    transform: scale(1.08);
+}
+
+/* =========================
+   MENU ICON
+========================= */
+
+.lii{
+    font-size: 35px;
+    padding: 25px;
+    display: none;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media(max-width:556px){
+
+    .navitem{
+        display:none;
+    }
+
+    .lii{
+        display: block;
+    }
+
+    .h{
+        font-size: 2.5rem;
+    }
+
+    .e,
+    .bo{
+        width: 70%;
+        margin-top: 10px;
+    }
+
+    hr{
+        width:200px;
+    }
+
+    .type{
+        font-size: 12px;
+    }
+
+    @keyframes typing{
+        0%{
+            width:0;
+        }
+        100%{
+            width:250px;
+        }
+    }
+}
+
+@media(max-width:650px){
+
+    .bi-whatsapp{
+        bottom: 20px;
+        right:10px;
+        font-size: 15px;
+        border: 2px solid white;
+    }
+}
